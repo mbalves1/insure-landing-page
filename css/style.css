@@ -1,0 +1,515 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+
+h1{
+    font-family:'DM Serif Display, sans-serif';
+}
+
+/** Header
+**/
+
+header {
+    font-size: 20px;
+    
+}
+
+
+@media screen and (max-width: 800px) {
+    .site-navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 70px;
+        align-items: center;
+        position: fixed;
+        padding: 35px;
+        background: #fdfdfd;
+    
+    }
+    
+    .hide {
+        display:none;
+    
+    }
+    
+    .hide-yscroll {
+        overflow-y: hidden;
+    }
+    
+    .main-nav {
+        margin-top: 139px;
+        color: white;
+        height: 100vh;
+        position: fixed;
+        width: 100%;
+        top: -71px;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        padding: 32%;
+        padding-top:229px;
+        transition:all 0.4s;
+        left:100%;
+        background: #2b272f url(../images/bg-pattern-mobile-nav.svg) no-repeat right bottom;
+         
+    }
+    
+    .show{
+        left:0;
+    }
+    
+    .main-nav-item {
+        padding-top:32px ;
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color:#fdfdfd;
+    }
+
+    ul {
+        position: relative;
+        top: -229px;
+    }
+    
+    .btn-primary {
+        border: 1px solid #fdfdfd;
+        padding: 10px;
+        width: 100%;
+        display: block;
+        position: relative;
+        top: 33px;
+        color: #fdfdfd;
+        background: #2b272f;
+        text-transform: uppercase;
+    }
+
+    .btn-section {
+        border: 1px solid #fdfdfd;
+        padding: 10px;
+        width: 90%;
+        display: block;
+        /* position: relative; */
+        top: 33px;
+        color: #fdfdfd;
+        background: #2b272f;
+        text-transform: uppercase;
+        margin-top:14vh;
+        margin-left: 17px;
+    }
+
+    /* Header Image*/
+
+    .header-img{
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    .intro-text {
+        background: #2b272f url(../images/bg-pattern-intro-left-mobile.svg) no-repeat;
+        text-align: center;
+        color:#fdfdfd;
+        padding: 95px 20px;
+
+    }
+ 
+    .image-intro{
+        background-image: url(images/image-intro-mobile.jpg);
+    }
+
+    .right-pattern {
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/bg-pattern-intro-right-mobile.svg);
+        background-repeat: no-repeat;
+        width: 35%;
+        position: relative;
+        top:843px;
+        right:0;
+    }
+    .patterns-intro-desktop,
+    .patter-rigth{
+        display: none;
+    }
+    .header-img1{
+        display:none;
+    }   
+    .weredifferent{
+        display: flex;
+        margin-top: 18vh;
+        top: 38vh;
+        font-size: 50px;
+        justify-content: center;
+        
+    }
+    .figures {
+        
+        top: 4vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 0 4vw;
+    }
+    .were-item{
+        padding: 6vh;
+    }
+    .findOut{
+            background-color: hsl(270, 9%, 17%);
+            background-image: url(../images/bg-pattern-how-we-work-mobile.svg);
+            background-position: top right;
+            background-repeat: no-repeat;
+            height: 60vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 88%;
+            margin: auto;
+            flex-direction:column;
+    
+    }
+    .h1-findOut {
+       
+            font-weight: 100;
+            line-height: 1;
+            margin: 0 10% 8%;
+            font-size: 2.5em;
+            text-align: center;
+    }
+    .img-findOut {
+        position: relative;
+        float:right;
+        top: -55vh;
+        /* margin-left: 59vw; */
+    }
+    .img-footer{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 30% 10% 8%;
+    
+    }
+    h1 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 2.9em;
+        padding-top: 10%;
+    }
+    
+    .icons{
+        margin:0 10% 8%;
+     
+            display: flex;
+            justify-content: center;
+            margin: 10%;
+        
+    }
+    .icons-item{
+        padding-left: 1%;
+    }
+
+    .links {
+        color: #333333;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+    }
+    .footerLnks{
+        display: flex;
+        flex-direction: column;
+        margin: 0 10% 8%;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    .text {
+      display: none;
+    }
+}
+
+
+@media (min-width: 800px) {
+    .hamburger-icon,
+    .close-icon,
+    .header-img {
+        display: none;
+    }
+    .site-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:2%;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav {
+        width:50%
+    }
+
+    ul li {
+        list-style: none;
+        padding-left: 5%;
+        font-size:1rem;
+    }
+
+    .image-intro {
+        display: flex;
+        justify-content: flex-end;
+        margin-right:5%;
+        padding-top:10% ;
+    }
+    .first-banner {
+        background:#2b272f;
+        height:49VH; 
+      
+    
+    }
+    /*****atentions*/
+    .pat {
+        display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    
+    }    
+    .weredifferent{
+        color:#333333;
+    }
+
+    .pat-pat {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    /*Atention*/
+    .text {
+       
+        margin-top: -190vh;
+        width: 55%;
+        padding-left: 11%;
+        text-align: left;
+    }
+    .header-img1 {
+        width: 38%;
+    }
+    
+    .intro-text {
+        display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -50%;
+    width: 54%;
+    padding-left: 10%;
+
+    }
+    .patterns-intro-desktop {
+        margin-top: -51vh;
+    }
+
+    .right-pattern {
+        display:flex;
+        justify-content: flex-start;
+    }
+    .container {
+        padding-top: 16%;
+        text-align: center;
+    }
+
+    .figures {
+        display: flex;
+        margin-top: 10vh;
+        margin-bottom: 20vh;
+    }
+
+    .findOut {
+        background-color: hsl(270, 9%, 17%);
+    background-image: url(../images/bg-pattern-how-we-work-mobile.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    height: 25vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 88%;
+    margin: auto;
+    /* padding-top: 6%; */
+    }
+
+    .h1-findOut {
+        width: 70%;
+        font-size: 3rem;
+        padding-left: 1px;
+        color: #fdfdfd;
+    }
+    .findTest {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn-findOut{
+        width: 30%;
+    margin-right: 4%;
+    height: 25%;
+    background: transparent;
+    border: 1px solid #fdfdfd;
+    color: #fdfdfd;
+    font-size: 1.2rem;
+    margin-top: 80px;
+    padding: 1%;
+    }
+    .hf1 {
+        display: flex;
+        align-items: center;
+    }
+
+    /*Footer*/
+    .img-footer{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 20% 68% 8%;
+    
+    }
+    h1 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 2.9em;
+        padding-top:5%;
+        color: #fdfdfd;
+    }
+    p{
+        color: #fdfdfd;
+    }
+    
+    
+    .icons{
+        margin:0 10% 8%;
+     
+            display: flex;
+            justify-content: center;
+            margin: 10%;
+        
+    }
+    .icons-item{
+        padding-left: 1%;
+    }
+
+    .links {
+        color: #333333;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+    }
+    .footerLnks{
+        display: flex;
+        flex-direction: column;
+        margin: 0 10% 8%;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    .text {
+      display: none;
+    }
+
+    .footr-first {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1%;
+    }
+
+    .footer-end {
+        display: flex;
+    justify-content: space-evenly;
+    }
+
+    /* .bg-footer {
+        background-image: url(../images/bg-pattern-footer-desktop.svg);
+        background-color: blue;
+    } */
+
+    /*btn*/
+    .btn-primary{
+        border: 1px solid #333333;
+        padding: 2px 34px;
+        
+        background: transparent;
+        transition: all .3s;
+    }
+
+    .btn-primary:hover{
+        background: #2b272f;
+        transition: all .3s;
+        color: #fdfdfd;
+    }
+
+    li a {
+        text-decoration: none;
+        color: #333333;
+    }
+
+    .btn-section {
+        border: 1px solid #fdfdfd;
+        padding: 2px 34px;
+        color: #fdfdfd;
+        background: transparent;
+        transition: all .3s;
+    }
+
+    .btn-section a {
+        text-decoration: none;
+        color:#fdfdfd;
+    }
+
+    .btn-section a:hover {
+        text-decoration: none;
+        color:#2b272f;
+    }
+
+    .btn-section:hover{
+        color: #2b272f;
+        transition: all .3s;
+        background: #fdfdfd;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1382px) { ... }
+
+
+
+
+
+
+
+
+
